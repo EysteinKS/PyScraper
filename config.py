@@ -1,1 +1,1 @@
-chromedriver = r"X:\Programmering\WebDrivers\chromedriver.exe"
+chromedriver = r"/Users/eystein/Documents/Programmering/PyScraper/chromedriver"
