@@ -12,6 +12,7 @@ from util import print_time
 class Scraper:
     def __init__(self, chromedriver, headless=False):
         chrome_options = Options()
+        chrome_options.add_argument("--log-level=3")
         if(headless):
             chrome_options.add_argument("--headless")
 
@@ -26,6 +27,7 @@ class Scraper:
             self.driver.implicitly_wait(wait_time)
 
         print_time("Page loaded")
+
 
     def click_by_xpath(self, xpath, wait_time=10):
         element = WebDriverWait(self.driver, wait_time).until(
